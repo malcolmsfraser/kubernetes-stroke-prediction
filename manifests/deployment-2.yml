@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "721final-74be"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "721final-74be"
+  template:
+    metadata:
+      labels:
+        app: "721final-74be"
+    spec:
+      containers:
+        - name: "721final-74be"
+          image: "ids721final.azurecr.io/721final"
+          ports:
+          - containerPort: 8080
