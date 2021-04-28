@@ -48,3 +48,17 @@ Step 7 - Find your load balancer IP
 ```
 kubectl get services
 ```
+
+## Part 2: Query you kubernetes application
+Step 1 - Create a virtual environment and install the cli requirements
+```
+python3 -m venv ~/.venv
+source ~/.venv/bin/activate
+pip install -r requirements.txt
+```
+
+Step 2 - Use the utility cli to query the load balancer endpoint:
+```
+python  utilscli.py payload-predict -host http://<Load-Balacer-External-IP>/predict
+```
+```
