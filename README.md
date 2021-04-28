@@ -1,6 +1,25 @@
 # kubernetes-stroke-prediction
 This repository will walk you throught the steps of deploying a containerized application in the Azure Cloud with Azure Kuebernetes Service, testing the endpoint, load testing the deployment, and automating the deployment and load testing.
 
+## Part 0: Test the Application Locally
+Step 1 - Create a virtual environment and install the requirements
+```
+python3 -m venv ~/.venv
+source ~/.venv/bin/activate
+pip install -r requirements.txt
+```
+
+Step 2 - Run the application locally
+```
+python app.py
+```
+
+Step 3 - From a separate terminal, queary the local host endpoint
+```
+python utilscli.py payload-predict
+```
+*default host for utilscli.py is http://localhost:8080/predict - use `python utilscli.py --help` for more info*
+
 ## Part 1: AKS/ACR Setup and Application Deployment 
 Step 1 - Create your aks cluster w/ desires specifications
 ```
@@ -50,7 +69,7 @@ kubectl get services
 ```
 
 ## Part 2: Query your kubernetes application
-Step 1 - Create a virtual environment and install the cli requirements
+Step 1 - (if you haven't already) Create a virtual environment and install the cli requirements
 ```
 python3 -m venv ~/.venv
 source ~/.venv/bin/activate
