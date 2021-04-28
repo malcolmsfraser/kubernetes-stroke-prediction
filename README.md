@@ -12,7 +12,7 @@ az aks create --resource-group 721Final --name 721Final \
 --max-count 5
 ```
 
-Step 2 - Load merge aks credentials between kubectl and your aks cluster
+Step 2 - Merge aks credentials between kubectl and your aks cluster
 ```
 az aks get-credentials --resource-group 721Final --name 721Final
 ```
