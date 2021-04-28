@@ -43,7 +43,7 @@ Step 3 - Create an acr respository
 az acr create --resource-group 721Final --name 721Final --sku Basic --admin-enabled true
 ```
 
-Step 4 - Attach acr repository to yuor aks cluster
+Step 4 - Attach acr repository to your aks cluster
 ```
 az aks update --resource-group 721Final --name 721Final --attach-acr 721Final
 ```
