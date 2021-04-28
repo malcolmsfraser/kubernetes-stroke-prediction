@@ -92,4 +92,4 @@ Azure makes this process very simple :)
 
 Be careful with naming resources, Azure has strict requirements. For example, DNS-1035 label must consist of lower case alphanumeric characters or '-', start with an alphabetic character, and end with an alphanumeric character (e.g. 'my-name',  or 'abc-123', regex used for validation is '[a-z]([-a-z0-9]*[a-z0-9])?')
 
-This means that '721final' would be an invalid choice, but 'final721' would be acceptable
+This means that even though you can name a resource '721final', it would be an invalid name. However 'final721' would be acceptable
