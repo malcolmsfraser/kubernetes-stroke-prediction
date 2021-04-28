@@ -55,12 +55,12 @@ az acr build --registry ids721final --image stroke-predict .
 
 Step 5 - Deploy your application on your aks cluster
 ```
-kubectl apply -f aksdeploy/deployment.yaml
+kubectl apply -f k8s/deployment.yaml
 ```
 
 Step 6 - Add a load balancer in front of your cluster
 ```
-kubectl apply -f aksdeploy/loadbalancer.yaml
+kubectl apply -f k8s/loadbalancer.yaml
 ```
 
 Step 7 - Find your load balancer IP
