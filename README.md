@@ -23,7 +23,7 @@ python utilscli.py payload-predict
 ## Part 1: AKS/ACR Setup and Application Deployment 
 Step 1 - Create your aks cluster w/ desires specifications
 ```
-az aks create --resource-group 721Final --name 721Final \
+az aks create --resource-group ids721final --name ids721final \
 --generate-ssh-keys \
 --node-count 3 \
 --vm-set-type VirtualMachineScaleSets \
@@ -35,22 +35,22 @@ az aks create --resource-group 721Final --name 721Final \
 
 Step 2 - Merge aks credentials between kubectl and your aks cluster
 ```
-az aks get-credentials --resource-group 721Final --name 721Final
+az aks get-credentials --resource-group ids721Final --name ids721final
 ```
 
 Step 3 - Create an acr respository
 ```
-az acr create --resource-group 721Final --name 721Final --sku Basic --admin-enabled true
+az acr create --resource-group ids721final --name ids721final --sku Basic --admin-enabled true
 ```
 
 Step 4 - Attach acr repository to your aks cluster
 ```
-az aks update --resource-group 721Final --name 721Final --attach-acr 721Final
+az aks update --resource-group ids721final --name ids721final --attach-acr ids721final
 ```
 
 Step 5 - Build your container image in you acr repository
 ```
-az acr build --registry 721Final --image stroke-predict .
+az acr build --registry ids721final --image stroke-predict .
 ```
 
 Step 5 - Deploy your application on your aks cluster
