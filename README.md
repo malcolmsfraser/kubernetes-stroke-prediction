@@ -49,7 +49,7 @@ Step 7 - Find your load balancer IP
 kubectl get services
 ```
 
-## Part 2: Query you kubernetes application
+## Part 2: Query your kubernetes application
 Step 1 - Create a virtual environment and install the cli requirements
 ```
 python3 -m venv ~/.venv
