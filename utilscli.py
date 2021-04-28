@@ -35,7 +35,7 @@ def mkrequest(host):
     """
     
     payload = create_payload()
-    click.echo(click.style(f"Querying host {host+'/predict'} with payload: \n{payload}",
+    click.echo(click.style(f"Querying host {host} with payload: \n{payload}",
         bg="green", fg="white"))
     result = requests.post(url=host, json=payload)
     click.echo(click.style(f"Predicted probability of patient stroke: {result.text}", bg="red", fg="white"))
@@ -58,7 +58,7 @@ def mk_payloadrequest(payload, host):
     with open(payload) as f:
         payload = json.load(f)
     if all([x in payload for x in inputs]):
-        click.echo(click.style(f"Querying host {host+'/predict'} with payload: \n{payload}",
+        click.echo(click.style(f"Querying host {host} with payload: \n{payload}",
             bg="green", fg="white"))
         result = requests.post(url=host, json=payload)
         click.echo(click.style(f"Predicted probability of patient stroke: {result.text}", bg="red", fg="white"))
