@@ -68,7 +68,7 @@ Step 7 - Find your load balancer IP
 kubectl get services
 ```
 
-## Part 2: Query your kubernetes application
+## Part 2: Query your Kubernetes Application
 Step 1 - (if you haven't already) Create a virtual environment and install the cli requirements
 ```
 python3 -m venv ~/.venv
@@ -81,3 +81,9 @@ Step 2 - Use the utility cli to query the load balancer endpoint:
 python  utilscli.py payload-predict -host http://<Load-Balacer-External-IP>/predict
 ```
 
+## Part 3: Continuously Deliver you Kubernetes Application
+Azure makes this process very simple :)  
+
+Navigate to the Azure Kubernetes Service console and select your deployment cluster.  
+In the panel on the left select "Deployment Center"  
+Follow the prompts to link the kubernetes deployment to a source code repository and set up CD
