@@ -14,7 +14,7 @@ Step 2 - Run the application locally
 python app.py
 ```
 
-Step 3 - From a separate terminal, queary the local host endpoint
+Step 3 - From a separate terminal, query the local host endpoint
 ```
 python utilscli.py payload-predict
 ```
