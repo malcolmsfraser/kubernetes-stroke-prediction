@@ -61,4 +61,4 @@ Step 2 - Use the utility cli to query the load balancer endpoint:
 ```
 python  utilscli.py payload-predict -host http://<Load-Balacer-External-IP>/predict
 ```
-```
+
