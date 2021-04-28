@@ -14,7 +14,7 @@ spec:
       spec:
         containers:
         - name: stroke-predict
-          image: <>.azurecr.io/stroke-predict
+          image: ids721final.azurecr.io/stroke-predict
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
