@@ -21,6 +21,8 @@ python utilscli.py payload-predict
 *default host for utilscli.py is http://localhost:8080/predict - use `python utilscli.py --help` for more info*
 
 ## Part 1: AKS/ACR Setup and Application Deployment 
+Step 0 - Create a new resource group from the Azure dashboard [ours us called ids721final]
+
 Step 1 - Create your aks cluster w/ desires specifications
 ```
 az aks create --resource-group ids721final --name ids721final \
