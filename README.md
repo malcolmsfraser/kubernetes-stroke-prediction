@@ -1,5 +1,5 @@
 # kubernetes-stroke-prediction
-
+This repository will walk you throught the steps of deploying a containerized application in the Azure Cloud with Azure Kuebernetes Service, testing the endpoint, load testing the deployment, and automating the deployment and load testing.
 
 ## Part 1: AKS/ACR Setup and Application Deployment 
 Step 1 - Create your aks cluster w/ desires specifications
