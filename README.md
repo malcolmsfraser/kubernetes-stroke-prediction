@@ -22,7 +22,7 @@ python utilscli.py payload-predict
 
 ## Part 1: AKS/ACR Setup and Application Deployment 
 Step 0 - Create a new resource group from the Azure dashboard 
-* ours us called ids721final
+* Ours is called `ids721final`
 
 Step 1 - Create your aks cluster w/ desires specifications
 ```
