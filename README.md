@@ -86,4 +86,4 @@ Azure makes this process very simple :)
 
 1. Navigate to the Azure Kubernetes Service console and select your deployment cluster.  
 2. In the panel on the left select "Deployment Center"  
-3. Follow the prompts to link the kubernetes deployment to a source code repository and set up CD
+3. Follow the prompts to link the kubernetes deployment to your application's source code repository and set up CD
