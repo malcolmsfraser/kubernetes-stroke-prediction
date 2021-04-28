@@ -84,6 +84,6 @@ python  utilscli.py payload-predict -host http://<Load-Balacer-External-IP>/pred
 ## Part 3: Continuously Deliver you Kubernetes Application
 Azure makes this process very simple :)  
 
-Navigate to the Azure Kubernetes Service console and select your deployment cluster.  
-In the panel on the left select "Deployment Center"  
-Follow the prompts to link the kubernetes deployment to a source code repository and set up CD
+1. Navigate to the Azure Kubernetes Service console and select your deployment cluster.  
+2. In the panel on the left select "Deployment Center"  
+3. Follow the prompts to link the kubernetes deployment to a source code repository and set up CD
