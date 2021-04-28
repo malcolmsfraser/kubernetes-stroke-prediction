@@ -1,5 +1,7 @@
 # kubernetes-stroke-prediction
 
+
+## Part 1: AKS/ACR Setup and Application Deployment 
 Step 1 - Create your aks cluster w/ desires specifications
 ```
 az aks create --resource-group 721Final --name 721Final \
@@ -40,4 +42,9 @@ kubectl apply -f aksdeploy/deployment.yaml
 Step 6 - Add a load balancer in front of your cluster
 ```
 kubectl apply -f aksdeploy/loadbalancer.yaml
+```
+
+Step 7 - Find your load balancer IP
+```
+kubectl get services
 ```
