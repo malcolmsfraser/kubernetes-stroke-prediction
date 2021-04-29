@@ -12,8 +12,7 @@ export const options = {
 };
 
 export default function () {
-    let data = {
-        "age": {"0": 64},
+    let data = {"age": {"0": 64},
         "hypertension": {"0": 0},
         "heart_disease": {"0": 0},
         "avg_glucose_level": {"0": 62.21},
@@ -38,6 +37,6 @@ export default function () {
 
     let res = http.post(url, JSON.stringify(data),
                        { headers: { 'Content-Type': 'application/json' } });
-    console.log(res.json());
+    console.log(res.body);
     sleep(1);
 }
