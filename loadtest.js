@@ -38,6 +38,6 @@ export default function () {
 
     let res = http.post(url, JSON.stringify(data),
                        { headers: { 'Content-Type': 'application/json' } });
-    console.log(res);
+    console.log(res.json());
     sleep(1);
 }
