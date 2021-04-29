@@ -4,8 +4,8 @@ import { sleep } from 'k6';
 const url = "http://20.81.8.9/predict";
 
 export const options = {
-  duration: '1m',
-  vus: 10,
+  duration: '2m',
+  vus: 100,
   thresholds: {
     http_req_duration: ['p(95)<2500'],
   },
