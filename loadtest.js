@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 
 const url = "http://20.81.8.9/predict";
-const data = require('./employees.json');
+const data = require('payload.json');
 
 export const options = {
   duration: '1m',
