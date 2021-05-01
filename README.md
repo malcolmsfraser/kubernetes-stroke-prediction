@@ -1,6 +1,6 @@
 # kubernetes-stroke-prediction
 This repository will walk you throught the steps of deploying a containerized application in the Azure Cloud with Azure Kuebernetes Service, testing the endpoint, load testing the deployment, and automating the deployment and load testing.
-
+[![alt text](https://github.com/malcolmsfraser/kubernetes-stroke-prediction/blob/main/images/721finalthumbnai.jpg)](https://youtu.be/_yqLdCtKRBo) 
 ## Part 0: Test the Application Locally
 Step 1 - Create a virtual environment and install the requirements
 ```
