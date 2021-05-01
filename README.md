@@ -91,7 +91,7 @@ Azure makes this process very simple :)
 2. In the panel on the left select "Deployment Center"  
 3. Follow the prompts to link the kubernetes deployment to your application's source code repository and set up CD
 
-## Part _ : Clean-up Resources
+## Part 4 : Clean-up Resources
 The simplest way is to delete the resource group which contains the project
 ```
 az group delete --name ids721final
